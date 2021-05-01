@@ -1,0 +1,55 @@
+extends layout
+
+block content
+    head
+        link(rel='preconnect' href='https://fonts.gstatic.com')
+        link(href='https://fonts.googleapis.com/css2?family=Sacramento&display=swap' rel='stylesheet')
+        link(rel='StyleSheet' href='css/styles.css' type='text/css')
+        link(rel='StyleSheet' href='css/nav.css' type='text/css')
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+        meta(charset='utf-8')
+    body
+        header
+            nav
+                ul
+                    img(src="images/", alt="Logo")
+                    li
+                        a(href='/') Home
+                    li |
+                    li
+                        a(href='/about') About Us
+                    li |
+                    li
+                        a(href='/Product') Product 
+        main(style="text-align: center; min-height: 500px")
+            section#intro-text
+                span Product
+                h4 "Take one step closer to YOUR CHAMPANGE LIFE!!"
+                ul(style="list-style-type:none;")
+                    li Graphic Tee's 
+                    li Hoodies 
+                    li Jackets 
+                    li Dad Caps 
+                    li Inspiration Quotes
+                    
+                a(href="/register") Sign Up for Free Today
+            section#intro-image
+                img(src='')
+                    
+        footer
+            img(src="images/ELOGO.jpg", alt="Logo")
+            div
+                h3 Join us on
+                a(href="#" class="fa fa-facebook")
+                a(href="#" class="fa fa-twitter")
+                a(href="#" class="fa fa-instagram")
+            ul
+                li
+                    a(href='/') Home
+                li |
+                li
+                    a(href='/about') About Us
+                li |
+                li
+                    a(href='/product') PRODUCT 
+            | &copy; Copyright 2021, ;Elevate by Zenobia Reeds

@@ -1,0 +1,115 @@
+extends layout
+
+block content
+    head
+        link(rel='preconnect' href='https://fonts.gstatic.com')
+        link(href='https://fonts.googleapis.com/css2?family=Sacramento&display=swap' rel='stylesheet')
+        link(rel='StyleSheet' href='css/styles.css' type='text/css')
+        link(rel='StyleSheet' href='css/nav.css' type='text/css')
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+        meta(charset='utf-8')
+    body
+        header
+            nav
+                ul
+                    img(src="images/hi_res_logo.jpg", alt="Logo")
+                    li
+                        a(href='/') Home
+                    li |
+                    li
+                        a(href='/about') About Us
+                    li |
+                    li
+                        a(href='/Product') Product 
+            a.register-button(href='/register') Sign Up
+            a.login-button(href='/login') Log In
+        main
+            section#intro-text
+                span ;Elevate 
+                h3 "Take one step closer to YOUR CHAMPANGE LIFE!!"
+                a(href='/register')
+                    button.submit-button(onclick="saveData()") Sign Up
+                a(href='/login')
+                    button.btn-primary Sign In
+            section#intro-image
+                img(src='images/ELOGO2')
+
+            
+            section#description-text
+                h2 
+                section#description-tutorial
+                    h3 GRAPHIC TEES
+                    p Each Graphic T promotes postive vibes,enegry, with outstanding pictures, words that give you the comfort to Love yourself. CHOOSE THE BEST ONES!! 
+                section#description-image
+                    img(src='images/positivetee2.jpg')
+                section#description-tutorial   
+                    h3 HOODIES 
+                    p Each Hoodie  promotes postive vibes,enegry, with outstanding pictures, words that give you the comfort to Love yourself. CHOOSE THE BEST ONES!! 
+                section#description-image
+                    img(src='images/smilehoodie.jpg')
+                section#description-tutorial
+                    h3 JACKETS
+                    p Each Jacket will give you the comfort to Love yourself. CHOOSE THE BEST ONES!! 
+                section#description-image
+                    img(src='images/jacket.jpg')
+                section#description-tutorial
+                    h3 DAD CAPS
+                    p Each DAD CAPS  promotes postive vibes,enegry, with outstanding pictures, words that give you the comfort to Love yourself. CHOOSE THE BEST ONES!! 
+                section#description-image
+                    img(src='images/dadcap.jpg')
+                section#description-tutorial
+                    h3 INSPIRATION QUOTES 
+                    p Elevate PROMOTES A POSTIVIE LIFE FROM EVERY DOWNFALL YOU HAVE MADE IN YOUR LIFE OR FROMTHE LITTLE PAIN YOU HAVE FELT. JUST INCASE YOU ARE HAVING A MOMENT, DAY, OR WHATEVER HERE GO SOME QUOTES THAT CAN HELP YOU GET THROUGH WHATEVER!! YOU ARE AMAZING PERSON
+                section#description-image
+                    img(src='images/insprirational.jpg')
+                    
+                    html(lang="en")
+                        head
+                            meta(charset="UTF-8")
+                            meta(http-equiv="X-UA-Compatible", content="IE=edge")
+                            meta(name="viewport", content="width=device-width, initial-scale=1.0")
+                            title Document
+                        body 
+                ection#description-image
+                    img(src='images/')
+
+            section#feature-text
+                h2 Feature Everyone Enjoys
+                section#feature-image
+                    img(src='images/elevate.jpeg')
+                #grid-container
+                    #grid-item 
+                        h4 
+                        p 
+                    #grid-item 
+                        h4 
+                        p 
+                    #grid-item
+                        h4 
+                        p 
+                    #grid-item 
+                        h4 
+                        p 
+                    #grid-item 
+                        h4 
+                        p 
+                    #grid-item 
+                        h4 
+                        p 
+        footer
+            img(src="images/ELOGO.JPG", alt="Logo")
+            div
+                h3 Join us on
+                a(href="#" class="fa fa-facebook")
+                a(href="#" class="fa fa-twitter")
+                a(href="#" class="fa fa-instagram")
+            ul
+                li
+                    a(href='/') Home
+                li |
+                li
+                    a(href='/about') About Us
+                li |
+                li
+                    a(href='/product') PRODUCT
+            | &copy; Copyright 2021, ;Elevate by Zenobia Reeds

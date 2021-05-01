@@ -1,0 +1,74 @@
+extends layout
+
+block content
+    head
+        link(rel='preconnect' href='https://fonts.gstatic.com')
+        link(href='https://fonts.googleapis.com/css2?family=Sacramento&display=swap' rel='stylesheet')
+        link(rel='StyleSheet' href='css/styles.css' type='text/css')
+        link(rel='StyleSheet' href='css/nav.css' type='text/css')
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+        meta(charset='utf-8')
+    body
+        header
+            nav
+                ul
+                    img(src="images/", alt="Logo")
+                    li
+                        a(href='/') Home
+                    li |
+                    li
+                        a(href='#') About Us
+                    li |
+                    li
+                        a(href='#') Product 
+        main(style="text-align: center; min-height: 500px")
+            img#register-img(src="images/ELOGO2.jpg", alt="Logo")
+            h3 Log In
+            p Doesn't have an account
+            a(href="/register") Sign Up for Free
+
+            section#intro-register
+                -data = data || {}
+                if errors
+                    ul
+                        for error in errors
+                            li= error.msg
+
+                form(action="/login" method="POST" class="form-registration")
+                    label(for="username") Username:
+                    input(
+                        type="text"
+                        id="username"
+                        name="username"
+                        class="form-control"
+                        value=data.username
+                    )
+
+                    label(for="password") Password:
+                    input(
+                        type="password"
+                        id="password"
+                        name="password"
+                        class="form-control"
+                        value=data.password
+                        required
+                    )
+                    button(type="submit" value="Register" required) Log In
+                    
+        footer
+            img(src="images/", alt="Logo")
+            div
+                h3 Join us on
+                a(href="#" class="fa fa-facebook")
+                a(href="#" class="fa fa-twitter")
+                a(href="#" class="fa fa-instagram")
+            ul
+                li
+                    a(href='/') Home
+                li |
+                li
+                    a(href='/about') About Us
+                li |
+                li
+                    a(href='/product') PRODUCT 
+            | &copy; Copyright 2021, ;Elevate by Zenobia Reeds

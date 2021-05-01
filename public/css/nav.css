@@ -1,0 +1,21 @@
+/* Nest Nav */
+nav {
+    font-size: 1em;
+    content-visibility: bold;
+    float: left; }
+    nav ul {
+      list-style-type: none;
+      width: 400px; }
+      nav ul img {
+        width: 20%;
+        float: left;
+        padding: 10px; }
+      nav ul li {
+        float: left;
+        margin: 30px 5px 0 0;
+        color: white; }
+        nav ul li a {
+          text-decoration: none;
+          color: white; }
+          nav ul li a:hover {
+            text-decoration: underline; }

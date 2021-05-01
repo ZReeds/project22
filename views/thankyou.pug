@@ -1,0 +1,45 @@
+extends layout
+
+block content
+    head
+        link(rel='preconnect' href='https://fonts.gstatic.com')
+        link(href='https://fonts.googleapis.com/css2?family=Sacramento&display=swap' rel='stylesheet')
+        link(rel='StyleSheet' href='css/styles.css' type='text/css')
+        link(rel='StyleSheet' href='css/nav.css' type='text/css')
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+        meta(charset='utf-8')
+    body
+        header
+            nav
+                ul
+                    img(src="images/hi_res_logo.jpg", alt="Logo")
+                    li
+                        a(href='/') Home
+                    li |
+                    li
+                        a(href='/about') About Us
+                    li |
+                    li
+                        a(href='/product') Integration
+        main(style="text-align: center; min-height: 500px")
+            img#register-img(src="images/hi_res_logo.jpg", alt="Logo")
+            h3 Thank you for your registration!
+            a(href="/login") Log In
+            
+        footer
+            img(src="images/hi_res_logo.jpg", alt="Logo")
+            div
+                h3 Join us on
+                a(href="#" class="fa fa-facebook")
+                a(href="#" class="fa fa-twitter")
+                a(href="#" class="fa fa-instagram")
+            ul
+                li
+                    a(href='/') Home
+                li |
+                li
+                    a(href='/about') About Us
+                li |
+                li
+                    a(href='/product') PRODUCT
+            | &copy; Copyright 2021, ;Elevate by Zenobia Reeds
